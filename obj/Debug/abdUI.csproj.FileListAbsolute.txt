@@ -1,0 +1,15 @@
+C:\Users\Tonyha7\source\repos\abdUI\bin\Debug\abdUI.exe.config
+C:\Users\Tonyha7\source\repos\abdUI\bin\Debug\abdUI.exe
+C:\Users\Tonyha7\source\repos\abdUI\bin\Debug\abdUI.pdb
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.csproj.AssemblyReference.cache
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.Form1.resources
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.Properties.Resources.resources
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.csproj.GenerateResource.cache
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.csproj.CoreCompileInputs.cache
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.exe
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.pdb
+C:\Users\Tonyha7\source\repos\abdUI\bin\Debug\abdUI.exe.manifest
+C:\Users\Tonyha7\source\repos\abdUI\bin\Debug\abdUI.application
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.exe.manifest
+C:\Users\Tonyha7\source\repos\abdUI\obj\Debug\abdUI.application
