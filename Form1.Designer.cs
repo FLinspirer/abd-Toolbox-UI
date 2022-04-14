@@ -31,34 +31,34 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CheckADB = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -66,7 +66,7 @@
             this.CheckADB.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CheckADB.Location = new System.Drawing.Point(6, 15);
             this.CheckADB.Name = "CheckADB";
-            this.CheckADB.Size = new System.Drawing.Size(119, 42);
+            this.CheckADB.Size = new System.Drawing.Size(136, 38);
             this.CheckADB.TabIndex = 0;
             this.CheckADB.Text = "查看ADB连接";
             this.CheckADB.UseVisualStyleBackColor = true;
@@ -85,15 +85,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "连接";
             // 
-            // button1
+            // button4
             // 
-            this.button1.Location = new System.Drawing.Point(6, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 38);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "开蓝牙";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button4.Location = new System.Drawing.Point(433, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(136, 38);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "关otg";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(291, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(136, 38);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "开otg";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -105,25 +115,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(291, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 38);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "开sd卡&otg";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(433, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 38);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "关sd卡&otg";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button1.Location = new System.Drawing.Point(6, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 38);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "开蓝牙";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -137,6 +137,16 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "设备";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(433, 24);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 38);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "关机(调用领创)";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -177,27 +187,69 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 405);
+            this.panel1.Size = new System.Drawing.Size(599, 411);
             this.panel1.TabIndex = 3;
             // 
-            // panel2
+            // groupBox4
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(6, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(628, 396);
-            this.panel2.TabIndex = 4;
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.button13);
+            this.groupBox4.Controls.Add(this.button14);
+            this.groupBox4.Controls.Add(this.button15);
+            this.groupBox4.Controls.Add(this.button16);
+            this.groupBox4.Location = new System.Drawing.Point(6, 214);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(576, 100);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "APP";
             // 
-            // button5
+            // textBox1
             // 
-            this.button5.Location = new System.Drawing.Point(433, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 38);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "关机(调用领创)";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.textBox1.Location = new System.Drawing.Point(6, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(562, 25);
+            this.textBox1.TabIndex = 4;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(433, 50);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(136, 38);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "写白名单";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(291, 50);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(136, 38);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "卸载";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(149, 50);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(136, 38);
+            this.button15.TabIndex = 1;
+            this.button15.Text = "解冻";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(6, 50);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(136, 38);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "冻结";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // groupBox3
             // 
@@ -205,7 +257,7 @@
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Controls.Add(this.button11);
             this.groupBox3.Controls.Add(this.button12);
-            this.groupBox3.Location = new System.Drawing.Point(6, 213);
+            this.groupBox3.Location = new System.Drawing.Point(6, 320);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(576, 70);
             this.groupBox3.TabIndex = 3;
@@ -252,66 +304,14 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // groupBox4
+            // panel2
             // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.button13);
-            this.groupBox4.Controls.Add(this.button14);
-            this.groupBox4.Controls.Add(this.button15);
-            this.groupBox4.Controls.Add(this.button16);
-            this.groupBox4.Location = new System.Drawing.Point(6, 288);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(576, 100);
-            this.groupBox4.TabIndex = 4;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "APP";
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(433, 50);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(136, 38);
-            this.button13.TabIndex = 3;
-            this.button13.Text = "写白名单";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(291, 50);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(136, 38);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "卸载";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(149, 50);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(136, 38);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "解冻";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(6, 50);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(136, 38);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "冻结";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(562, 25);
-            this.textBox1.TabIndex = 4;
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Location = new System.Drawing.Point(6, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(628, 396);
+            this.panel2.TabIndex = 4;
             // 
             // Form1
             // 
@@ -326,10 +326,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
