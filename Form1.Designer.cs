@@ -53,12 +53,18 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -180,6 +186,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox5);
             this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.CheckADB);
@@ -187,7 +194,7 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 411);
+            this.panel1.Size = new System.Drawing.Size(599, 498);
             this.panel1.TabIndex = 3;
             // 
             // groupBox4
@@ -257,7 +264,7 @@
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Controls.Add(this.button11);
             this.groupBox3.Controls.Add(this.button12);
-            this.groupBox3.Location = new System.Drawing.Point(6, 320);
+            this.groupBox3.Location = new System.Drawing.Point(6, 396);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(576, 70);
             this.groupBox3.TabIndex = 3;
@@ -313,6 +320,59 @@
             this.panel2.Size = new System.Drawing.Size(628, 396);
             this.panel2.TabIndex = 4;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.button17);
+            this.groupBox5.Controls.Add(this.button18);
+            this.groupBox5.Controls.Add(this.button19);
+            this.groupBox5.Controls.Add(this.button20);
+            this.groupBox5.Location = new System.Drawing.Point(6, 320);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(576, 70);
+            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "领创";
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(433, 24);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(136, 38);
+            this.button17.TabIndex = 3;
+            this.button17.Text = "强开管理员(su)";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(291, 24);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(136, 38);
+            this.button18.TabIndex = 2;
+            this.button18.Text = "清除数据";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(149, 24);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(136, 38);
+            this.button19.TabIndex = 1;
+            this.button19.Text = "解冻";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(6, 24);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(136, 38);
+            this.button20.TabIndex = 0;
+            this.button20.Text = "冻结";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -330,6 +390,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -360,6 +421,11 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }
 
