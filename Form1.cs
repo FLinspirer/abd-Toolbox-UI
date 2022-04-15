@@ -49,12 +49,12 @@ namespace abdUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es \"cmd\" \"command_bluetooth\" --ei \"active\" 1"));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.enablefileshare\""));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es \"cmd\" \"command_bluetooth\" --ei \"active\" 0"));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.disablefileshare\""));
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace abdUI
 
         private void button8_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es \"cmd\" \"command_reset_factory\""));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.enable.screenshot\""));
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -109,22 +109,22 @@ namespace abdUI
 
         private void button16_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am broadcast - n com.android.launcher3 / com.innofidei.guardsecure.service.EduAppReceiver - a \"com.linspirer.edu.disableapp\" --esal \"appwhitelist\" " + textBox1.Text));
+            MessageBox.Show(RunCommand("adb shell am broadcast - n com.android.launcher3 / com.innofidei.guardsecure.service.EduAppReceiver - a \"com.linspirer.edu.disableapp\" --esal \"appwhitelist\" " + PackageNameTextBox.Text));
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.setappwhitelist\" --esal \"appwhitelist\" " + textBox1.Text));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.setappwhitelist\" --esal \"appwhitelist\" " + PackageNameTextBox.Text));
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.enableapp\" --esal \"appwhitelist\" " + textBox1.Text));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.enableapp\" --esal \"appwhitelist\" " + PackageNameTextBox.Text));
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.silentuninstall\" --es \"packageName\" " + textBox1.Text));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.silentuninstall\" --es \"packageName\" " + PackageNameTextBox.Text));
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -145,6 +145,32 @@ namespace abdUI
         private void button17_Click(object sender, EventArgs e)
         {
             MessageBox.Show(RunCommand("adb shell su -c \"am start -n com.android.launcher3/com.innofidei.guardsecure.AdminActivity\""));
+        }
+
+        private void WipeData1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell am broadcast -a android.intent.action.MASTER_CLEAR"));
+        }
+
+        private void WipeData2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell am broadcast -a android.intent.action.MASTER_CLEAR -f 0x01000000"));
+        }
+
+        private void WipeData3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell su -c \"am broadcast -a android.intent.action.MASTER_CLEAR\""));
+        }
+
+        private void WipeDatabyLinspirer_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3 / com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService--es \"cmd\" \"command_reset_factory\""));
+        }
+
+        private void ABOUT_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.ShowDialog();
         }
     }
 }

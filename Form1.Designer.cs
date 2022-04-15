@@ -30,41 +30,46 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CheckADB = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.ConnectionsGroupBox = new System.Windows.Forms.GroupBox();
+            this.DisableOTG = new System.Windows.Forms.Button();
+            this.EnableOTG = new System.Windows.Forms.Button();
+            this.DisableFileShare = new System.Windows.Forms.Button();
+            this.EnableFileShare = new System.Windows.Forms.Button();
+            this.DeviceGroupBox = new System.Windows.Forms.GroupBox();
+            this.Poweroff = new System.Windows.Forms.Button();
+            this.Reboot = new System.Windows.Forms.Button();
+            this.ReleaseControl = new System.Windows.Forms.Button();
+            this.EnableScreenshot = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.LinspirerGroupBox = new System.Windows.Forms.GroupBox();
+            this.OpenAdminSettings = new System.Windows.Forms.Button();
+            this.ClearLinspirer = new System.Windows.Forms.Button();
+            this.EnableLinspirer = new System.Windows.Forms.Button();
+            this.DisableLinspirer = new System.Windows.Forms.Button();
+            this.AppGroupBox = new System.Windows.Forms.GroupBox();
+            this.PackageNameTextBox = new System.Windows.Forms.TextBox();
+            this.AddAppWhiteList = new System.Windows.Forms.Button();
+            this.SilentUninstallApp = new System.Windows.Forms.Button();
+            this.EnableApp = new System.Windows.Forms.Button();
+            this.DisableApp = new System.Windows.Forms.Button();
+            this.OthersGroupBox = new System.Windows.Forms.GroupBox();
+            this.ClassOver = new System.Windows.Forms.Button();
+            this.ClassBegin = new System.Windows.Forms.Button();
+            this.DisableFirewall = new System.Windows.Forms.Button();
+            this.EnableFirewall = new System.Windows.Forms.Button();
+            this.DataGroupBox = new System.Windows.Forms.GroupBox();
+            this.WipeDatabyLinspirer = new System.Windows.Forms.Button();
+            this.WipeData3 = new System.Windows.Forms.Button();
+            this.WipeData2 = new System.Windows.Forms.Button();
+            this.WipeData1 = new System.Windows.Forms.Button();
+            this.ABOUT = new System.Windows.Forms.Button();
+            this.ConnectionsGroupBox.SuspendLayout();
+            this.DeviceGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.LinspirerGroupBox.SuspendLayout();
+            this.AppGroupBox.SuspendLayout();
+            this.OthersGroupBox.SuspendLayout();
+            this.DataGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -78,319 +83,378 @@
             this.CheckADB.UseVisualStyleBackColor = true;
             this.CheckADB.Click += new System.EventHandler(this.CheckADB_Click);
             // 
-            // groupBox1
+            // ConnectionsGroupBox
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(576, 70);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "连接";
+            this.ConnectionsGroupBox.Controls.Add(this.DisableOTG);
+            this.ConnectionsGroupBox.Controls.Add(this.EnableOTG);
+            this.ConnectionsGroupBox.Controls.Add(this.DisableFileShare);
+            this.ConnectionsGroupBox.Controls.Add(this.EnableFileShare);
+            this.ConnectionsGroupBox.Location = new System.Drawing.Point(6, 63);
+            this.ConnectionsGroupBox.Name = "ConnectionsGroupBox";
+            this.ConnectionsGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.ConnectionsGroupBox.TabIndex = 1;
+            this.ConnectionsGroupBox.TabStop = false;
+            this.ConnectionsGroupBox.Text = "连接";
             // 
-            // button4
+            // DisableOTG
             // 
-            this.button4.Location = new System.Drawing.Point(433, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 38);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "关otg";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.DisableOTG.Location = new System.Drawing.Point(433, 24);
+            this.DisableOTG.Name = "DisableOTG";
+            this.DisableOTG.Size = new System.Drawing.Size(136, 38);
+            this.DisableOTG.TabIndex = 2;
+            this.DisableOTG.Text = "关otg";
+            this.DisableOTG.UseVisualStyleBackColor = true;
+            this.DisableOTG.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // EnableOTG
             // 
-            this.button3.Location = new System.Drawing.Point(291, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 38);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "开otg";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.EnableOTG.Location = new System.Drawing.Point(291, 24);
+            this.EnableOTG.Name = "EnableOTG";
+            this.EnableOTG.Size = new System.Drawing.Size(136, 38);
+            this.EnableOTG.TabIndex = 2;
+            this.EnableOTG.Text = "开otg";
+            this.EnableOTG.UseVisualStyleBackColor = true;
+            this.EnableOTG.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // DisableFileShare
             // 
-            this.button2.Location = new System.Drawing.Point(149, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 38);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "关蓝牙";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.DisableFileShare.Location = new System.Drawing.Point(149, 24);
+            this.DisableFileShare.Name = "DisableFileShare";
+            this.DisableFileShare.Size = new System.Drawing.Size(136, 38);
+            this.DisableFileShare.TabIndex = 1;
+            this.DisableFileShare.Text = "关蓝牙";
+            this.DisableFileShare.UseVisualStyleBackColor = true;
+            this.DisableFileShare.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // EnableFileShare
             // 
-            this.button1.Location = new System.Drawing.Point(6, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 38);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "开蓝牙";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.EnableFileShare.Location = new System.Drawing.Point(6, 24);
+            this.EnableFileShare.Name = "EnableFileShare";
+            this.EnableFileShare.Size = new System.Drawing.Size(136, 38);
+            this.EnableFileShare.TabIndex = 0;
+            this.EnableFileShare.Text = "开蓝牙";
+            this.EnableFileShare.UseVisualStyleBackColor = true;
+            this.EnableFileShare.Click += new System.EventHandler(this.button1_Click);
             // 
-            // groupBox2
+            // DeviceGroupBox
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Location = new System.Drawing.Point(6, 138);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(576, 70);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "设备";
+            this.DeviceGroupBox.Controls.Add(this.Poweroff);
+            this.DeviceGroupBox.Controls.Add(this.Reboot);
+            this.DeviceGroupBox.Controls.Add(this.ReleaseControl);
+            this.DeviceGroupBox.Controls.Add(this.EnableScreenshot);
+            this.DeviceGroupBox.Location = new System.Drawing.Point(6, 138);
+            this.DeviceGroupBox.Name = "DeviceGroupBox";
+            this.DeviceGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.DeviceGroupBox.TabIndex = 2;
+            this.DeviceGroupBox.TabStop = false;
+            this.DeviceGroupBox.Text = "设备";
             // 
-            // button5
+            // Poweroff
             // 
-            this.button5.Location = new System.Drawing.Point(433, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 38);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "关机(调用领创)";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.Poweroff.Location = new System.Drawing.Point(433, 24);
+            this.Poweroff.Name = "Poweroff";
+            this.Poweroff.Size = new System.Drawing.Size(136, 38);
+            this.Poweroff.TabIndex = 3;
+            this.Poweroff.Text = "关机(调用领创)";
+            this.Poweroff.UseVisualStyleBackColor = true;
+            this.Poweroff.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // Reboot
             // 
-            this.button6.Location = new System.Drawing.Point(291, 24);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(136, 38);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "重启(调用领创)";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.Reboot.Location = new System.Drawing.Point(291, 24);
+            this.Reboot.Name = "Reboot";
+            this.Reboot.Size = new System.Drawing.Size(136, 38);
+            this.Reboot.TabIndex = 2;
+            this.Reboot.Text = "重启(调用领创)";
+            this.Reboot.UseVisualStyleBackColor = true;
+            this.Reboot.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // ReleaseControl
             // 
-            this.button7.Location = new System.Drawing.Point(149, 24);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 38);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "解控";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.ReleaseControl.Location = new System.Drawing.Point(149, 24);
+            this.ReleaseControl.Name = "ReleaseControl";
+            this.ReleaseControl.Size = new System.Drawing.Size(136, 38);
+            this.ReleaseControl.TabIndex = 1;
+            this.ReleaseControl.Text = "解控";
+            this.ReleaseControl.UseVisualStyleBackColor = true;
+            this.ReleaseControl.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // EnableScreenshot
             // 
-            this.button8.Location = new System.Drawing.Point(6, 24);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 38);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "恢复出厂";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.EnableScreenshot.Location = new System.Drawing.Point(6, 24);
+            this.EnableScreenshot.Name = "EnableScreenshot";
+            this.EnableScreenshot.Size = new System.Drawing.Size(136, 38);
+            this.EnableScreenshot.TabIndex = 0;
+            this.EnableScreenshot.Text = "允许截图";
+            this.EnableScreenshot.UseVisualStyleBackColor = true;
+            this.EnableScreenshot.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox5);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.ABOUT);
+            this.panel1.Controls.Add(this.DataGroupBox);
+            this.panel1.Controls.Add(this.LinspirerGroupBox);
+            this.panel1.Controls.Add(this.AppGroupBox);
+            this.panel1.Controls.Add(this.OthersGroupBox);
             this.panel1.Controls.Add(this.CheckADB);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(4, 3);
+            this.panel1.Controls.Add(this.DeviceGroupBox);
+            this.panel1.Controls.Add(this.ConnectionsGroupBox);
+            this.panel1.Location = new System.Drawing.Point(9, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 498);
+            this.panel1.Size = new System.Drawing.Size(599, 578);
             this.panel1.TabIndex = 3;
             // 
-            // groupBox4
+            // LinspirerGroupBox
             // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.button13);
-            this.groupBox4.Controls.Add(this.button14);
-            this.groupBox4.Controls.Add(this.button15);
-            this.groupBox4.Controls.Add(this.button16);
-            this.groupBox4.Location = new System.Drawing.Point(6, 214);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(576, 100);
-            this.groupBox4.TabIndex = 4;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "APP";
+            this.LinspirerGroupBox.Controls.Add(this.OpenAdminSettings);
+            this.LinspirerGroupBox.Controls.Add(this.ClearLinspirer);
+            this.LinspirerGroupBox.Controls.Add(this.EnableLinspirer);
+            this.LinspirerGroupBox.Controls.Add(this.DisableLinspirer);
+            this.LinspirerGroupBox.Location = new System.Drawing.Point(6, 396);
+            this.LinspirerGroupBox.Name = "LinspirerGroupBox";
+            this.LinspirerGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.LinspirerGroupBox.TabIndex = 4;
+            this.LinspirerGroupBox.TabStop = false;
+            this.LinspirerGroupBox.Text = "领创";
             // 
-            // textBox1
+            // OpenAdminSettings
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(562, 25);
-            this.textBox1.TabIndex = 4;
+            this.OpenAdminSettings.Location = new System.Drawing.Point(433, 24);
+            this.OpenAdminSettings.Name = "OpenAdminSettings";
+            this.OpenAdminSettings.Size = new System.Drawing.Size(136, 38);
+            this.OpenAdminSettings.TabIndex = 3;
+            this.OpenAdminSettings.Text = "强开管理员(su)";
+            this.OpenAdminSettings.UseVisualStyleBackColor = true;
+            this.OpenAdminSettings.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button13
+            // ClearLinspirer
             // 
-            this.button13.Location = new System.Drawing.Point(433, 50);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(136, 38);
-            this.button13.TabIndex = 3;
-            this.button13.Text = "写白名单";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.ClearLinspirer.Location = new System.Drawing.Point(291, 24);
+            this.ClearLinspirer.Name = "ClearLinspirer";
+            this.ClearLinspirer.Size = new System.Drawing.Size(136, 38);
+            this.ClearLinspirer.TabIndex = 2;
+            this.ClearLinspirer.Text = "清除数据";
+            this.ClearLinspirer.UseVisualStyleBackColor = true;
+            this.ClearLinspirer.Click += new System.EventHandler(this.button18_Click);
             // 
-            // button14
+            // EnableLinspirer
             // 
-            this.button14.Location = new System.Drawing.Point(291, 50);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(136, 38);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "卸载";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.EnableLinspirer.Location = new System.Drawing.Point(149, 24);
+            this.EnableLinspirer.Name = "EnableLinspirer";
+            this.EnableLinspirer.Size = new System.Drawing.Size(136, 38);
+            this.EnableLinspirer.TabIndex = 1;
+            this.EnableLinspirer.Text = "解冻";
+            this.EnableLinspirer.UseVisualStyleBackColor = true;
+            this.EnableLinspirer.Click += new System.EventHandler(this.button19_Click);
             // 
-            // button15
+            // DisableLinspirer
             // 
-            this.button15.Location = new System.Drawing.Point(149, 50);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(136, 38);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "解冻";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.DisableLinspirer.Location = new System.Drawing.Point(6, 24);
+            this.DisableLinspirer.Name = "DisableLinspirer";
+            this.DisableLinspirer.Size = new System.Drawing.Size(136, 38);
+            this.DisableLinspirer.TabIndex = 0;
+            this.DisableLinspirer.Text = "冻结";
+            this.DisableLinspirer.UseVisualStyleBackColor = true;
+            this.DisableLinspirer.Click += new System.EventHandler(this.button20_Click);
             // 
-            // button16
+            // AppGroupBox
             // 
-            this.button16.Location = new System.Drawing.Point(6, 50);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(136, 38);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "冻结";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.AppGroupBox.Controls.Add(this.PackageNameTextBox);
+            this.AppGroupBox.Controls.Add(this.AddAppWhiteList);
+            this.AppGroupBox.Controls.Add(this.SilentUninstallApp);
+            this.AppGroupBox.Controls.Add(this.EnableApp);
+            this.AppGroupBox.Controls.Add(this.DisableApp);
+            this.AppGroupBox.Location = new System.Drawing.Point(6, 214);
+            this.AppGroupBox.Name = "AppGroupBox";
+            this.AppGroupBox.Size = new System.Drawing.Size(576, 100);
+            this.AppGroupBox.TabIndex = 4;
+            this.AppGroupBox.TabStop = false;
+            this.AppGroupBox.Text = "APP";
             // 
-            // groupBox3
+            // PackageNameTextBox
             // 
-            this.groupBox3.Controls.Add(this.button9);
-            this.groupBox3.Controls.Add(this.button10);
-            this.groupBox3.Controls.Add(this.button11);
-            this.groupBox3.Controls.Add(this.button12);
-            this.groupBox3.Location = new System.Drawing.Point(6, 396);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(576, 70);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "其他";
+            this.PackageNameTextBox.Location = new System.Drawing.Point(6, 19);
+            this.PackageNameTextBox.Name = "PackageNameTextBox";
+            this.PackageNameTextBox.Size = new System.Drawing.Size(562, 25);
+            this.PackageNameTextBox.TabIndex = 4;
             // 
-            // button9
+            // AddAppWhiteList
             // 
-            this.button9.Location = new System.Drawing.Point(433, 24);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(136, 38);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "下课";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.AddAppWhiteList.Location = new System.Drawing.Point(433, 50);
+            this.AddAppWhiteList.Name = "AddAppWhiteList";
+            this.AddAppWhiteList.Size = new System.Drawing.Size(136, 38);
+            this.AddAppWhiteList.TabIndex = 3;
+            this.AddAppWhiteList.Text = "写白名单";
+            this.AddAppWhiteList.UseVisualStyleBackColor = true;
+            this.AddAppWhiteList.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button10
+            // SilentUninstallApp
             // 
-            this.button10.Location = new System.Drawing.Point(291, 24);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(136, 38);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "上课";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.SilentUninstallApp.Location = new System.Drawing.Point(291, 50);
+            this.SilentUninstallApp.Name = "SilentUninstallApp";
+            this.SilentUninstallApp.Size = new System.Drawing.Size(136, 38);
+            this.SilentUninstallApp.TabIndex = 2;
+            this.SilentUninstallApp.Text = "卸载";
+            this.SilentUninstallApp.UseVisualStyleBackColor = true;
+            this.SilentUninstallApp.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button11
+            // EnableApp
             // 
-            this.button11.Location = new System.Drawing.Point(149, 24);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(136, 38);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "关闭网络防火墙";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.EnableApp.Location = new System.Drawing.Point(149, 50);
+            this.EnableApp.Name = "EnableApp";
+            this.EnableApp.Size = new System.Drawing.Size(136, 38);
+            this.EnableApp.TabIndex = 1;
+            this.EnableApp.Text = "解冻";
+            this.EnableApp.UseVisualStyleBackColor = true;
+            this.EnableApp.Click += new System.EventHandler(this.button15_Click);
             // 
-            // button12
+            // DisableApp
             // 
-            this.button12.Location = new System.Drawing.Point(6, 24);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(136, 38);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "打开网络防火墙";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.DisableApp.Location = new System.Drawing.Point(6, 50);
+            this.DisableApp.Name = "DisableApp";
+            this.DisableApp.Size = new System.Drawing.Size(136, 38);
+            this.DisableApp.TabIndex = 0;
+            this.DisableApp.Text = "冻结";
+            this.DisableApp.UseVisualStyleBackColor = true;
+            this.DisableApp.Click += new System.EventHandler(this.button16_Click);
             // 
-            // panel2
+            // OthersGroupBox
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(6, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(628, 396);
-            this.panel2.TabIndex = 4;
+            this.OthersGroupBox.Controls.Add(this.ClassOver);
+            this.OthersGroupBox.Controls.Add(this.ClassBegin);
+            this.OthersGroupBox.Controls.Add(this.DisableFirewall);
+            this.OthersGroupBox.Controls.Add(this.EnableFirewall);
+            this.OthersGroupBox.Location = new System.Drawing.Point(6, 471);
+            this.OthersGroupBox.Name = "OthersGroupBox";
+            this.OthersGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.OthersGroupBox.TabIndex = 3;
+            this.OthersGroupBox.TabStop = false;
+            this.OthersGroupBox.Text = "其他";
             // 
-            // groupBox5
+            // ClassOver
             // 
-            this.groupBox5.Controls.Add(this.button17);
-            this.groupBox5.Controls.Add(this.button18);
-            this.groupBox5.Controls.Add(this.button19);
-            this.groupBox5.Controls.Add(this.button20);
-            this.groupBox5.Location = new System.Drawing.Point(6, 320);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(576, 70);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "领创";
+            this.ClassOver.Location = new System.Drawing.Point(433, 24);
+            this.ClassOver.Name = "ClassOver";
+            this.ClassOver.Size = new System.Drawing.Size(136, 38);
+            this.ClassOver.TabIndex = 3;
+            this.ClassOver.Text = "下课";
+            this.ClassOver.UseVisualStyleBackColor = true;
+            this.ClassOver.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button17
+            // ClassBegin
             // 
-            this.button17.Location = new System.Drawing.Point(433, 24);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(136, 38);
-            this.button17.TabIndex = 3;
-            this.button17.Text = "强开管理员(su)";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.ClassBegin.Location = new System.Drawing.Point(291, 24);
+            this.ClassBegin.Name = "ClassBegin";
+            this.ClassBegin.Size = new System.Drawing.Size(136, 38);
+            this.ClassBegin.TabIndex = 2;
+            this.ClassBegin.Text = "上课";
+            this.ClassBegin.UseVisualStyleBackColor = true;
+            this.ClassBegin.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button18
+            // DisableFirewall
             // 
-            this.button18.Location = new System.Drawing.Point(291, 24);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(136, 38);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "清除数据";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.DisableFirewall.Location = new System.Drawing.Point(149, 24);
+            this.DisableFirewall.Name = "DisableFirewall";
+            this.DisableFirewall.Size = new System.Drawing.Size(136, 38);
+            this.DisableFirewall.TabIndex = 1;
+            this.DisableFirewall.Text = "关闭网络防火墙";
+            this.DisableFirewall.UseVisualStyleBackColor = true;
+            this.DisableFirewall.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button19
+            // EnableFirewall
             // 
-            this.button19.Location = new System.Drawing.Point(149, 24);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(136, 38);
-            this.button19.TabIndex = 1;
-            this.button19.Text = "解冻";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.EnableFirewall.Location = new System.Drawing.Point(6, 24);
+            this.EnableFirewall.Name = "EnableFirewall";
+            this.EnableFirewall.Size = new System.Drawing.Size(136, 38);
+            this.EnableFirewall.TabIndex = 0;
+            this.EnableFirewall.Text = "打开网络防火墙";
+            this.EnableFirewall.UseVisualStyleBackColor = true;
+            this.EnableFirewall.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button20
+            // DataGroupBox
             // 
-            this.button20.Location = new System.Drawing.Point(6, 24);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(136, 38);
-            this.button20.TabIndex = 0;
-            this.button20.Text = "冻结";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.DataGroupBox.Controls.Add(this.WipeDatabyLinspirer);
+            this.DataGroupBox.Controls.Add(this.WipeData3);
+            this.DataGroupBox.Controls.Add(this.WipeData2);
+            this.DataGroupBox.Controls.Add(this.WipeData1);
+            this.DataGroupBox.Location = new System.Drawing.Point(6, 320);
+            this.DataGroupBox.Name = "DataGroupBox";
+            this.DataGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.DataGroupBox.TabIndex = 5;
+            this.DataGroupBox.TabStop = false;
+            this.DataGroupBox.Text = "恢复出厂";
+            // 
+            // WipeDatabyLinspirer
+            // 
+            this.WipeDatabyLinspirer.Location = new System.Drawing.Point(433, 24);
+            this.WipeDatabyLinspirer.Name = "WipeDatabyLinspirer";
+            this.WipeDatabyLinspirer.Size = new System.Drawing.Size(136, 38);
+            this.WipeDatabyLinspirer.TabIndex = 3;
+            this.WipeDatabyLinspirer.Text = "调用领创";
+            this.WipeDatabyLinspirer.UseVisualStyleBackColor = true;
+            this.WipeDatabyLinspirer.Click += new System.EventHandler(this.WipeDatabyLinspirer_Click);
+            // 
+            // WipeData3
+            // 
+            this.WipeData3.Location = new System.Drawing.Point(291, 24);
+            this.WipeData3.Name = "WipeData3";
+            this.WipeData3.Size = new System.Drawing.Size(136, 38);
+            this.WipeData3.TabIndex = 2;
+            this.WipeData3.Text = "su";
+            this.WipeData3.UseVisualStyleBackColor = true;
+            this.WipeData3.Click += new System.EventHandler(this.WipeData3_Click);
+            // 
+            // WipeData2
+            // 
+            this.WipeData2.Location = new System.Drawing.Point(149, 24);
+            this.WipeData2.Name = "WipeData2";
+            this.WipeData2.Size = new System.Drawing.Size(136, 38);
+            this.WipeData2.TabIndex = 1;
+            this.WipeData2.Text = "Android 8.0+";
+            this.WipeData2.UseVisualStyleBackColor = true;
+            this.WipeData2.Click += new System.EventHandler(this.WipeData2_Click);
+            // 
+            // WipeData1
+            // 
+            this.WipeData1.Location = new System.Drawing.Point(6, 24);
+            this.WipeData1.Name = "WipeData1";
+            this.WipeData1.Size = new System.Drawing.Size(136, 38);
+            this.WipeData1.TabIndex = 0;
+            this.WipeData1.Text = "Android 7.1-";
+            this.WipeData1.UseVisualStyleBackColor = true;
+            this.WipeData1.Click += new System.EventHandler(this.WipeData1_Click);
+            // 
+            // ABOUT
+            // 
+            this.ABOUT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ABOUT.Location = new System.Drawing.Point(439, 15);
+            this.ABOUT.Name = "ABOUT";
+            this.ABOUT.Size = new System.Drawing.Size(136, 38);
+            this.ABOUT.TabIndex = 6;
+            this.ABOUT.Text = "关于";
+            this.ABOUT.UseVisualStyleBackColor = true;
+            this.ABOUT.Click += new System.EventHandler(this.ABOUT_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(641, 397);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "abd toolbox ui";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.ConnectionsGroupBox.ResumeLayout(false);
+            this.DeviceGroupBox.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
+            this.LinspirerGroupBox.ResumeLayout(false);
+            this.AppGroupBox.ResumeLayout(false);
+            this.AppGroupBox.PerformLayout();
+            this.OthersGroupBox.ResumeLayout(false);
+            this.DataGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -398,34 +462,39 @@
         #endregion
 
         private System.Windows.Forms.Button CheckADB;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.GroupBox ConnectionsGroupBox;
+        private System.Windows.Forms.Button DisableOTG;
+        private System.Windows.Forms.Button EnableOTG;
+        private System.Windows.Forms.Button DisableFileShare;
+        private System.Windows.Forms.Button EnableFileShare;
+        private System.Windows.Forms.GroupBox DeviceGroupBox;
+        private System.Windows.Forms.Button Reboot;
+        private System.Windows.Forms.Button ReleaseControl;
+        private System.Windows.Forms.Button EnableScreenshot;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button Poweroff;
+        private System.Windows.Forms.GroupBox OthersGroupBox;
+        private System.Windows.Forms.Button ClassOver;
+        private System.Windows.Forms.Button ClassBegin;
+        private System.Windows.Forms.Button DisableFirewall;
+        private System.Windows.Forms.Button EnableFirewall;
+        private System.Windows.Forms.GroupBox AppGroupBox;
+        private System.Windows.Forms.TextBox PackageNameTextBox;
+        private System.Windows.Forms.Button AddAppWhiteList;
+        private System.Windows.Forms.Button SilentUninstallApp;
+        private System.Windows.Forms.Button EnableApp;
+        private System.Windows.Forms.Button DisableApp;
+        private System.Windows.Forms.GroupBox LinspirerGroupBox;
+        private System.Windows.Forms.Button OpenAdminSettings;
+        private System.Windows.Forms.Button ClearLinspirer;
+        private System.Windows.Forms.Button EnableLinspirer;
+        private System.Windows.Forms.Button DisableLinspirer;
+        private System.Windows.Forms.GroupBox DataGroupBox;
+        private System.Windows.Forms.Button WipeDatabyLinspirer;
+        private System.Windows.Forms.Button WipeData3;
+        private System.Windows.Forms.Button WipeData2;
+        private System.Windows.Forms.Button WipeData1;
+        private System.Windows.Forms.Button ABOUT;
     }
 }
 
