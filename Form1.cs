@@ -172,5 +172,11 @@ namespace abdUI
             Form2 f = new Form2();
             f.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.ShowDialog();
+        }
     }
 }

@@ -41,6 +41,12 @@
             this.ReleaseControl = new System.Windows.Forms.Button();
             this.EnableScreenshot = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ABOUT = new System.Windows.Forms.Button();
+            this.DataGroupBox = new System.Windows.Forms.GroupBox();
+            this.WipeDatabyLinspirer = new System.Windows.Forms.Button();
+            this.WipeData3 = new System.Windows.Forms.Button();
+            this.WipeData2 = new System.Windows.Forms.Button();
+            this.WipeData1 = new System.Windows.Forms.Button();
             this.LinspirerGroupBox = new System.Windows.Forms.GroupBox();
             this.OpenAdminSettings = new System.Windows.Forms.Button();
             this.ClearLinspirer = new System.Windows.Forms.Button();
@@ -57,19 +63,14 @@
             this.ClassBegin = new System.Windows.Forms.Button();
             this.DisableFirewall = new System.Windows.Forms.Button();
             this.EnableFirewall = new System.Windows.Forms.Button();
-            this.DataGroupBox = new System.Windows.Forms.GroupBox();
-            this.WipeDatabyLinspirer = new System.Windows.Forms.Button();
-            this.WipeData3 = new System.Windows.Forms.Button();
-            this.WipeData2 = new System.Windows.Forms.Button();
-            this.WipeData1 = new System.Windows.Forms.Button();
-            this.ABOUT = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.ConnectionsGroupBox.SuspendLayout();
             this.DeviceGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.DataGroupBox.SuspendLayout();
             this.LinspirerGroupBox.SuspendLayout();
             this.AppGroupBox.SuspendLayout();
             this.OthersGroupBox.SuspendLayout();
-            this.DataGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -191,6 +192,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ABOUT);
             this.panel1.Controls.Add(this.DataGroupBox);
             this.panel1.Controls.Add(this.LinspirerGroupBox);
@@ -203,6 +205,70 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(599, 578);
             this.panel1.TabIndex = 3;
+            // 
+            // ABOUT
+            // 
+            this.ABOUT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ABOUT.Location = new System.Drawing.Point(439, 15);
+            this.ABOUT.Name = "ABOUT";
+            this.ABOUT.Size = new System.Drawing.Size(136, 38);
+            this.ABOUT.TabIndex = 6;
+            this.ABOUT.Text = "关于";
+            this.ABOUT.UseVisualStyleBackColor = true;
+            this.ABOUT.Click += new System.EventHandler(this.ABOUT_Click);
+            // 
+            // DataGroupBox
+            // 
+            this.DataGroupBox.Controls.Add(this.WipeDatabyLinspirer);
+            this.DataGroupBox.Controls.Add(this.WipeData3);
+            this.DataGroupBox.Controls.Add(this.WipeData2);
+            this.DataGroupBox.Controls.Add(this.WipeData1);
+            this.DataGroupBox.Location = new System.Drawing.Point(6, 320);
+            this.DataGroupBox.Name = "DataGroupBox";
+            this.DataGroupBox.Size = new System.Drawing.Size(576, 70);
+            this.DataGroupBox.TabIndex = 5;
+            this.DataGroupBox.TabStop = false;
+            this.DataGroupBox.Text = "恢复出厂";
+            // 
+            // WipeDatabyLinspirer
+            // 
+            this.WipeDatabyLinspirer.Location = new System.Drawing.Point(433, 24);
+            this.WipeDatabyLinspirer.Name = "WipeDatabyLinspirer";
+            this.WipeDatabyLinspirer.Size = new System.Drawing.Size(136, 38);
+            this.WipeDatabyLinspirer.TabIndex = 3;
+            this.WipeDatabyLinspirer.Text = "调用领创";
+            this.WipeDatabyLinspirer.UseVisualStyleBackColor = true;
+            this.WipeDatabyLinspirer.Click += new System.EventHandler(this.WipeDatabyLinspirer_Click);
+            // 
+            // WipeData3
+            // 
+            this.WipeData3.Location = new System.Drawing.Point(291, 24);
+            this.WipeData3.Name = "WipeData3";
+            this.WipeData3.Size = new System.Drawing.Size(136, 38);
+            this.WipeData3.TabIndex = 2;
+            this.WipeData3.Text = "su";
+            this.WipeData3.UseVisualStyleBackColor = true;
+            this.WipeData3.Click += new System.EventHandler(this.WipeData3_Click);
+            // 
+            // WipeData2
+            // 
+            this.WipeData2.Location = new System.Drawing.Point(149, 24);
+            this.WipeData2.Name = "WipeData2";
+            this.WipeData2.Size = new System.Drawing.Size(136, 38);
+            this.WipeData2.TabIndex = 1;
+            this.WipeData2.Text = "Android 8.0+";
+            this.WipeData2.UseVisualStyleBackColor = true;
+            this.WipeData2.Click += new System.EventHandler(this.WipeData2_Click);
+            // 
+            // WipeData1
+            // 
+            this.WipeData1.Location = new System.Drawing.Point(6, 24);
+            this.WipeData1.Name = "WipeData1";
+            this.WipeData1.Size = new System.Drawing.Size(136, 38);
+            this.WipeData1.TabIndex = 0;
+            this.WipeData1.Text = "Android 7.1-";
+            this.WipeData1.UseVisualStyleBackColor = true;
+            this.WipeData1.Click += new System.EventHandler(this.WipeData1_Click);
             // 
             // LinspirerGroupBox
             // 
@@ -371,69 +437,16 @@
             this.EnableFirewall.UseVisualStyleBackColor = true;
             this.EnableFirewall.Click += new System.EventHandler(this.button12_Click);
             // 
-            // DataGroupBox
+            // button1
             // 
-            this.DataGroupBox.Controls.Add(this.WipeDatabyLinspirer);
-            this.DataGroupBox.Controls.Add(this.WipeData3);
-            this.DataGroupBox.Controls.Add(this.WipeData2);
-            this.DataGroupBox.Controls.Add(this.WipeData1);
-            this.DataGroupBox.Location = new System.Drawing.Point(6, 320);
-            this.DataGroupBox.Name = "DataGroupBox";
-            this.DataGroupBox.Size = new System.Drawing.Size(576, 70);
-            this.DataGroupBox.TabIndex = 5;
-            this.DataGroupBox.TabStop = false;
-            this.DataGroupBox.Text = "恢复出厂";
-            // 
-            // WipeDatabyLinspirer
-            // 
-            this.WipeDatabyLinspirer.Location = new System.Drawing.Point(433, 24);
-            this.WipeDatabyLinspirer.Name = "WipeDatabyLinspirer";
-            this.WipeDatabyLinspirer.Size = new System.Drawing.Size(136, 38);
-            this.WipeDatabyLinspirer.TabIndex = 3;
-            this.WipeDatabyLinspirer.Text = "调用领创";
-            this.WipeDatabyLinspirer.UseVisualStyleBackColor = true;
-            this.WipeDatabyLinspirer.Click += new System.EventHandler(this.WipeDatabyLinspirer_Click);
-            // 
-            // WipeData3
-            // 
-            this.WipeData3.Location = new System.Drawing.Point(291, 24);
-            this.WipeData3.Name = "WipeData3";
-            this.WipeData3.Size = new System.Drawing.Size(136, 38);
-            this.WipeData3.TabIndex = 2;
-            this.WipeData3.Text = "su";
-            this.WipeData3.UseVisualStyleBackColor = true;
-            this.WipeData3.Click += new System.EventHandler(this.WipeData3_Click);
-            // 
-            // WipeData2
-            // 
-            this.WipeData2.Location = new System.Drawing.Point(149, 24);
-            this.WipeData2.Name = "WipeData2";
-            this.WipeData2.Size = new System.Drawing.Size(136, 38);
-            this.WipeData2.TabIndex = 1;
-            this.WipeData2.Text = "Android 8.0+";
-            this.WipeData2.UseVisualStyleBackColor = true;
-            this.WipeData2.Click += new System.EventHandler(this.WipeData2_Click);
-            // 
-            // WipeData1
-            // 
-            this.WipeData1.Location = new System.Drawing.Point(6, 24);
-            this.WipeData1.Name = "WipeData1";
-            this.WipeData1.Size = new System.Drawing.Size(136, 38);
-            this.WipeData1.TabIndex = 0;
-            this.WipeData1.Text = "Android 7.1-";
-            this.WipeData1.UseVisualStyleBackColor = true;
-            this.WipeData1.Click += new System.EventHandler(this.WipeData1_Click);
-            // 
-            // ABOUT
-            // 
-            this.ABOUT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ABOUT.Location = new System.Drawing.Point(439, 15);
-            this.ABOUT.Name = "ABOUT";
-            this.ABOUT.Size = new System.Drawing.Size(136, 38);
-            this.ABOUT.TabIndex = 6;
-            this.ABOUT.Text = "关于";
-            this.ABOUT.UseVisualStyleBackColor = true;
-            this.ABOUT.Click += new System.EventHandler(this.ABOUT_Click);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(297, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 38);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "安装APK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -450,11 +463,11 @@
             this.ConnectionsGroupBox.ResumeLayout(false);
             this.DeviceGroupBox.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.DataGroupBox.ResumeLayout(false);
             this.LinspirerGroupBox.ResumeLayout(false);
             this.AppGroupBox.ResumeLayout(false);
             this.AppGroupBox.PerformLayout();
             this.OthersGroupBox.ResumeLayout(false);
-            this.DataGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,6 +508,7 @@
         private System.Windows.Forms.Button WipeData2;
         private System.Windows.Forms.Button WipeData1;
         private System.Windows.Forms.Button ABOUT;
+        private System.Windows.Forms.Button button1;
     }
 }
 
