@@ -41,6 +41,7 @@
             this.ReleaseControl = new System.Windows.Forms.Button();
             this.EnableScreenshot = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.ABOUT = new System.Windows.Forms.Button();
             this.DataGroupBox = new System.Windows.Forms.GroupBox();
             this.WipeDatabyLinspirer = new System.Windows.Forms.Button();
@@ -63,7 +64,10 @@
             this.ClassBegin = new System.Windows.Forms.Button();
             this.DisableFirewall = new System.Windows.Forms.Button();
             this.EnableFirewall = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.ConnectionsGroupBox.SuspendLayout();
             this.DeviceGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -71,6 +75,7 @@
             this.LinspirerGroupBox.SuspendLayout();
             this.AppGroupBox.SuspendLayout();
             this.OthersGroupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -192,6 +197,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ABOUT);
             this.panel1.Controls.Add(this.DataGroupBox);
@@ -203,8 +209,19 @@
             this.panel1.Controls.Add(this.ConnectionsGroupBox);
             this.panel1.Location = new System.Drawing.Point(9, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 578);
+            this.panel1.Size = new System.Drawing.Size(599, 642);
             this.panel1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(297, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 38);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "安装APK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // ABOUT
             // 
@@ -437,16 +454,43 @@
             this.EnableFirewall.UseVisualStyleBackColor = true;
             this.EnableFirewall.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button1
+            // groupBox1
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(297, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 38);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "安装APK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Location = new System.Drawing.Point(6, 551);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(576, 70);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "动态密码";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(149, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 38);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "计算";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 33);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(136, 25);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(291, 24);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(277, 38);
+            this.textBox2.TabIndex = 5;
             // 
             // Form1
             // 
@@ -468,6 +512,8 @@
             this.AppGroupBox.ResumeLayout(false);
             this.AppGroupBox.PerformLayout();
             this.OthersGroupBox.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -509,6 +555,10 @@
         private System.Windows.Forms.Button WipeData1;
         private System.Windows.Forms.Button ABOUT;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

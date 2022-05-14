@@ -1,9 +1,11 @@
-﻿using System;
+﻿using NPOI.POIFS.Crypt;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -178,5 +180,73 @@ namespace abdUI
             Form3 f = new Form3();
             f.ShowDialog();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            String key500 = "1191ADF1-8489-D8DA-5E9B-755A8B674394-485SDEWQ-QWYHK586";
+            String key501 = "40E06F51-30D0-D6AD-7F7D-008AD0ADC570";
+            String swdid = textBox1.Text;
+            string pass500 = calc(swdid, key500);
+            string pass501 = calc(swdid, key501);
+            textBox2.Text = "5.0.***:" + pass500 + System.Environment.NewLine + "5.01.***:" + pass501;
+        }
+        public static string calc(string str, string key)
+        {
+            string str2 = DateTime.Now.ToString("yyyyMMdd") + str + key;
+            string b = m3759b(str2);
+            if (b.Length > 8)
+            {
+                var tempVar = b.Length - 8;
+                return m3758c(b.Substring(tempVar, b.Length - (tempVar)));
+            }
+            return "";
+        }
+        public static string m3759b(string str)
+        {
+                sbyte[] bytes = str.GetBytes();
+                MessageDigest instance = MessageDigest.getInstance("md5");
+                instance.reset();
+                instance.update(bytes);
+                sbyte[] digest = instance.digest();
+                StringBuilder sb = new StringBuilder();
+                foreach (sbyte b in digest)
+                {
+                    string hexString = (b & 255).ToString("x");
+                    if (hexString.Length == 1)
+                    {
+                        hexString = "0" + hexString;
+                    }
+                    sb.Append(hexString);
+                }
+                return sb.ToString();
+            
+        }
+        public static string m3758c(string str)
+        {
+            string valueOf = Convert.ToInt64(str, 16).ToString();
+            if (valueOf.Length <= 8)
+            {
+                return valueOf;
+            }
+            var tempVar = valueOf.Length - 8;
+            return valueOf.Substring(tempVar, valueOf.Length - (tempVar));
+        }
+
+        public static string GetMD5WithString(String str)
+        {
+            MD5 md5Hash = MD5.Create();
+            // 将输入字符串转换为字节数组并计算哈希数据  
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(str));
+            // 创建一个 Stringbuilder 来收集字节并创建字符串  
+            StringBuilder strout = new StringBuilder();
+            // 循环遍历哈希数据的每一个字节并格式化为十六进制字符串  
+            for (int i = 0; i < data.Length; i++)
+            {
+                strout.Append(data[i].ToString("x2"));//加密结果"x2"结果为32位,"x3"结果为48位,"x4"结果为64位
+            }
+            // 返回十六进制字符串  
+            return strout.ToString();
+        }
+
     }
 }
