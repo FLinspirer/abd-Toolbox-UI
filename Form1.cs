@@ -1,13 +1,6 @@
-﻿using NPOI.POIFS.Crypt;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using System;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace abdUI
@@ -203,13 +196,8 @@ namespace abdUI
         }
         public static string m3759b(string str)
         {
-                sbyte[] bytes = str.GetBytes();
-                MessageDigest instance = MessageDigest.getInstance("md5");
-                instance.reset();
-                instance.update(bytes);
-                sbyte[] digest = instance.digest();
                 StringBuilder sb = new StringBuilder();
-                foreach (sbyte b in digest)
+                foreach (sbyte b in str)
                 {
                     string hexString = (b & 255).ToString("x");
                     if (hexString.Length == 1)
