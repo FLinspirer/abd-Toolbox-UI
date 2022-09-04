@@ -68,6 +68,9 @@
             this.ClassBegin = new System.Windows.Forms.Button();
             this.DisableFirewall = new System.Windows.Forms.Button();
             this.EnableFirewall = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.ConnectionsGroupBox.SuspendLayout();
             this.DeviceGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,6 +79,7 @@
             this.LinspirerGroupBox.SuspendLayout();
             this.AppGroupBox.SuspendLayout();
             this.OthersGroupBox.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // CheckADB
@@ -197,6 +201,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ABOUT);
@@ -207,9 +212,9 @@
             this.panel1.Controls.Add(this.CheckADB);
             this.panel1.Controls.Add(this.DeviceGroupBox);
             this.panel1.Controls.Add(this.ConnectionsGroupBox);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 642);
+            this.panel1.Size = new System.Drawing.Size(601, 707);
             this.panel1.TabIndex = 3;
             // 
             // groupBox1
@@ -217,12 +222,12 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(6, 551);
+            this.groupBox1.Location = new System.Drawing.Point(3, 628);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(576, 70);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "动态密码";
+            this.groupBox1.Text = "动态密码（因为Java和C#数组范围不一致用不了）";
             // 
             // textBox2
             // 
@@ -492,6 +497,37 @@
             this.EnableFirewall.UseVisualStyleBackColor = true;
             this.EnableFirewall.Click += new System.EventHandler(this.button12_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Location = new System.Drawing.Point(6, 551);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(576, 70);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tensafe";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(149, 24);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 38);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "DebugActivity";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 24);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 38);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "EdXposed";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -514,6 +550,7 @@
             this.AppGroupBox.ResumeLayout(false);
             this.AppGroupBox.PerformLayout();
             this.OthersGroupBox.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -559,6 +596,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 

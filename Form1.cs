@@ -104,7 +104,7 @@ namespace abdUI
 
         private void button16_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am broadcast - n com.android.launcher3 / com.innofidei.guardsecure.service.EduAppReceiver - a \"com.linspirer.edu.disableapp\" --esal \"appwhitelist\" " + PackageNameTextBox.Text));
+            MessageBox.Show(RunCommand("adb shell am broadcast -n com.android.launcher3/com.innofidei.guardsecure.service.EduAppReceiver -a \"com.linspirer.edu.disableapp\" --esal \"appwhitelist\" " + PackageNameTextBox.Text));
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -159,7 +159,7 @@ namespace abdUI
 
         private void WipeDatabyLinspirer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3 / com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService--es \"cmd\" \"command_reset_factory\""));
+            MessageBox.Show(RunCommand("adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es \"cmd\" \"command_reset_factory\""));
         }
 
         private void ABOUT_Click(object sender, EventArgs e)
@@ -236,5 +236,14 @@ namespace abdUI
             return strout.ToString();
         }
 
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell am broadcast -a com.tensafe.app.onerun.fun.sucmd com.topjohnwu.magisk --es argv \"am start -n de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity\" --es magic \"!@#$@ss2$\""));
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show(RunCommand("adb shell am broadcast -a com.tensafe.app.onerun.fun.sucmd com.topjohnwu.magisk --es argv \"am start -n de.robv.android.xposed.installer/de.robv.android.xposed.installer.DebugActivity\" --es magic \"!@#$@ss2$\""));
+        }
     }
 }
